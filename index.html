@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="css/icon-font.css">
 
+    <script src="javascript/index.js"></script>
+
+
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -31,11 +34,11 @@
             <span class="navigation__icon">&nbsp;</span>
         </label>
 
-        <div class="navigation__background">&nbsp;</div>
+        <div id="bg" class="navigation__background">&nbsp;</div>
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#footer" class="navigation__link"><span>01</span>About Journey Guru</a></li>
+                <li id="l1" class="navigation__item"><a href="#footer" class="navigation__link"><span>01</span>About Journey Guru</a></li>
                 <li class="navigation__item"><a href="#benifits" class="navigation__link"><span>02</span>Your benfits</a></li>
                 <li class="navigation__item"><a href="#section-tours" class="navigation__link"><span>03</span>Popular tours</a></li>
                 <li class="navigation__item"><a href="#story" class="navigation__link"><span>04</span>Stories</a></li>
@@ -73,15 +76,12 @@
                 <div data-aos="fade-up" class="col-1-of-2">
                     <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
                     <p class="paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                        libero repellat quis consequatur
-                        ducimus quam nisi exercitationem omnis earum qui.
+                        Nature is made of everything we see around us-tress, flowers, plants, animals, sky, mountains and many more. Human beings depend on nature to stay alive. Nature helps us breath, gives us food, water, shelter, medicines, and clothes. We find many colors in nature which make the Earth Beautiful
                     </p>
 
                     <h3 class="heading-tertiary u-margin-bottom-small">Live adventures like you never have before</h3>
                     <p class="paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nulla deserunt voluptatum
-                        nam.
+                        An adventure is an exciting experience or undertaking that is typically bold, sometimes risky. Adventures may be activities with some potential for physical danger such as traveling, exploring, skydiving, mountain climbing, scuba diving, river rafting or participating in extreme sports.
                     </p>
 
                     <a href="#" class="btn-text">Learn more &rarr;</a>
@@ -101,11 +101,6 @@
                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo 3"
                             class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
 
-                        <!--
-                            <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
-                            <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
-                            <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                            -->
                     </div>
                 </div>
             </div>
@@ -120,7 +115,7 @@
                         <i class="feature-box__icon icon-basic-world"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
                         <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            You are going to expore the new things which you may have never met in your life, which you love most.
                         </p>
                     </div>
                 </div>
@@ -130,7 +125,7 @@
                         <i class="feature-box__icon icon-basic-compass"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Meet nature</h3>
                         <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            You are going to meet the nature and feel the inner beauty of the preprocessing thing in this universe.
                         </p>
                     </div>
                 </div>
@@ -140,7 +135,7 @@
                         <i class="feature-box__icon icon-basic-map"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Find your way</h3>
                         <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            After the wonderful journey, we promise you that you gonna find a best path in your life
                         </p>
                     </div>
                 </div>
@@ -150,7 +145,7 @@
                         <i class="feature-box__icon icon-basic-heart"></i>
                         <h3 class="heading-tertiary u-margin-bottom-small">Live a healthier life</h3>
                         <p class="feature-box__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur.
+                            Health is not only wealth and it is also a presence of you to your beloved ones, so make it clean and cool.
                         </p>
                     </div>
                 </div>
@@ -191,7 +186,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">&#8377; 8000</p>
                                 </div>
-                                <a href="#popup" class="btn btn--white">Book now!</a>
+                                <a href="bookingPart/form.html" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -224,7 +219,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">&#8377; 9000</p>
                                 </div>
-                                <a href="#popup" class="btn btn--white">Book now!</a>
+                                <a href="bookingPart/form.html" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -257,7 +252,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">&#8377; 10000</p>
                                 </div>
-                                <a href="#popup" class="btn btn--white">Book now!</a>
+                                <a href="bookingPart/form.html" class="btn btn--white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -265,7 +260,7 @@
             </div>
 
             <div class="u-center-text u-margin-top-huge">
-                <a href="#" class="btn btn--green">Discover all tours</a>
+                <a href="bookingPart/booking.html" class="btn btn--green">Discover all tours</a>
             </div>
         </section>
 
@@ -295,10 +290,7 @@
                         <h3 data-aos="fade-down" data-aos-duration="2000"
                             class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family</h3>
                         <p data-aos="fade-up" data-aos-duration="2000">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                            libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                            We booked a 9 day trip to Greece through this travel company. From the start of the process, their company made it seamless to obtain the itinerary we were looking for, We had an amazing experience and would recommend this company 100% for all.
                         </p>
                     </div>
                 </div>
@@ -314,10 +306,7 @@
                         <h3 data-aos="fade-down" data-aos-duration="2000"
                             class="heading-tertiary u-margin-bottom-small">WOW! My life is completely different now</h3>
                         <p data-aos="fade-up" data-aos-duration="2000">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur
-                            libero repellat quis consequatur
-                            ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero
-                            repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.
+                            Thank you Journey Guru! Once again you have provided me with an incredible trip that has created lifelong memories about the people and places we met on our trip to Spain planned by this travel company!
                         </p>
                     </div>
                 </div>
@@ -333,7 +322,7 @@
             <div class="row">
                 <div class="book">
                     <div class="book__form">
-                        <form action="#" class="form">
+                        <form action="bookingPart/form.html" class="form">
                             <div class="u-margin-bottom-medium">
                                 <h2 class="heading-secondary">
                                     Start booking now
@@ -341,31 +330,13 @@
                             </div>
 
                             <div class="form__group">
-                                <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                                <input type="text" class="form__input" placeholder="Full name" id="name" required autocomplete="off">
                                 <label for="name" class="form__label">Full name</label>
                             </div>
 
                             <div class="form__group">
-                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required autocomplete="new-field-name">
                                 <label for="email" class="form__label">Email address</label>
-                            </div>
-
-                            <div class="form__group u-margin-bottom-medium">
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="small" name="size">
-                                    <label for="small" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        Small tour group
-                                    </label>
-                                </div>
-
-                                <div class="form__radio-group">
-                                    <input type="radio" class="form__radio-input" id="large" name="size">
-                                    <label for="large" class="form__radio-label">
-                                        <span class="form__radio-button"></span>
-                                        Large tour group
-                                    </label>
-                                </div>
                             </div>
 
                             <div class="form__group">

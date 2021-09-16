@@ -142,6 +142,9 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
+.font-icon {
+  margin-left: 50px; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -215,6 +218,12 @@ body {
   color: #fff; }
   .btn--green::after {
     background-color: #55c57a; }
+
+.btn--blue {
+  background-color: #2998ff;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #2998ff; }
 
 .btn::after {
   content: "";
@@ -344,7 +353,7 @@ body {
     text-transform: uppercase; }
   .card__price-value {
     font-size: 6rem;
-    font-weight: 100; }
+    font-weight: 300; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .card {
       height: auto;
@@ -764,7 +773,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500;
+  z-index: -1500;
   opacity: 0;
   width: 0;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
@@ -806,7 +815,8 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  z-index: 1000; }
 
 .navigation__icon {
   position: relative;
