@@ -1,2 +1,2 @@
 # Tequed labs internship project
-``` Please use npm instal ```
+``` Please use npm install ```
